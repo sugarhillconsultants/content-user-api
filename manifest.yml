@@ -1,0 +1,7 @@
+applications:
+  - name: user-api
+  memory: 512m
+  disk_quota: 512m
+  instances: 2
+  routes:
+    - route: user-api.cfapps.io
