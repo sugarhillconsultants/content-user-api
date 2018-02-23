@@ -3,7 +3,8 @@ var router = express.Router();
 var User = require('../models/user');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/users', function(req, res, next) {
+  console.log("find user");
   User.find( function(err, users) {
     if (err) {
       res.status(500).send(err);
@@ -14,7 +15,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
-router.get('/:user_id', function(req, res, next) {
+router.get('/users/:user_id', function(req, res, next) {
   User.findById(req.params.user_id, function(err, user) {
     if (err) {
       res.status(404).send(err);
