@@ -4,15 +4,11 @@ var cfenv = require("cfenv");
 var appEnv = cfenv.getAppEnv();
 var config = require('./../config');
 
-if (appEnv.isLocal) {
-  newrelic_license_key = process.env.NEW_REILIC_LICENSE_KEY;
-} else {
-  newrelic_service = appEnv.getService("newrelic");
-}
+newrelic_license_key = config.newrelic_license_key;
 
 router.get('/newrelic', function(req, res, next) {
   console.log("config");
-  res.json(newrelic_service);
+  res.json({ "newrelic_license_key": newrelic_license_key});
 });
 
 module.exports = router;

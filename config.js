@@ -9,6 +9,7 @@ if (appEnv.isLocal) {
 } else {
   vcaps_services = JSON.parse(process.env.VCAP_SERVICES);
   uri = vcaps_services['mlab'][0].credentials.uri;
+  newrelic_license_key = appEnv.getServiceURL("newrelic");
 }
 
 module.exports = {
