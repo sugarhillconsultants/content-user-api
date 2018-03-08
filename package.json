@@ -16,5 +16,9 @@
     "morgan": "~1.9.0",
     "newrelic": "^3.0.0",
     "serve-favicon": "~2.4.5"
+  },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
   }
 }

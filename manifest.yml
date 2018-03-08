@@ -5,3 +5,5 @@ applications:
   instances: 2
   services:
   - user-mongodb-xxx
+  env:
+    NEW_REILIC_LICENSE_KEY: xxx
