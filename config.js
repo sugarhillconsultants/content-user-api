@@ -9,5 +9,5 @@ if (appEnv.isLocal) {
 }
 
 module.exports = {
-  'db_uri': uri,
+  'db_uri': ,
 }
