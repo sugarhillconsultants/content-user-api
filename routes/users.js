@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
       {
         "name": "Rob Durbin",
         "username": "rburbin",
-        "email": "bdurbin@example.com"
+        "email": "rdurbin@example.com"
       },
       {
         "name": "Sally Hemmings",
