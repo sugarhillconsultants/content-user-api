@@ -6,24 +6,24 @@ router.get('/', function(req, res, next) {
   var users = {
     "users": [
       {
-        "name": "Bob Dobbs",
-        "username": "bdobbs",
-        "email": "bdobbs@example.com"
+        "name": "Rob Durbin",
+        "username": "rburbin",
+        "email": "bdurbin@example.com"
       },
       {
-        "name": "Sally Jones",
-        "username": "sjones",
-        "email": "sjones@example.com"
+        "name": "Sally Hemmings",
+        "username": "shemmings",
+        "email": "shemmings@example.com"
       },
       {
-        "name": "Adam Stephens",
-        "username": "astephens",
-        "email": "astephens@example.com"
+        "name": "Adam West",
+        "username": "awest",
+        "email": "thebatman@example.com"
       },
       {
-        "name": "Casey Roberts",
-        "username": "croberts",
-        "email": "croberts@example.com"
+        "name": "Casey Macys",
+        "username": "cmacys",
+        "email": "cmacys@example.com"
       }
     ]
   }
